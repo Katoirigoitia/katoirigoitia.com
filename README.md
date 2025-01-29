@@ -19,3 +19,15 @@ Como se Presenta?
 GitHub.
 Link de deploy (githubages)
 Link de Repositorio -->
+
+Comentarios para el corrector/a
+los 5 HTML tienen estilos, y estan linkeados.
+Usé Flex en la Navbar.
+Grid en el AboutMe.
+Pseudoclases en los botones de Nav, en el boton del Hero "Hablemos", y en la imagen de projects.html hquorum.
+Voy a agregar eventualmente Pseudoclases al formulario de contacto.
+Los 5 html son completamente responsive Desktop Tablet Mobile. Hay que hacer correcciones en los breakpoints en los que estoy trabajando.
+
+No estoy usando Boostrap en este proyecto, el profesor mencionó en la clase 11 que era opcional.
+El repositorio no se llama como lo solicita la preentrega.
+

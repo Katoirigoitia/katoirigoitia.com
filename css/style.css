@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+  color: #E5E4E0;
+}
+
+body {
+  background-color: #030104;
+}
+body header {
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  align-items: center;
+  font-size: 1rem;
+}
+body header a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+body header nav ul li {
+  list-style: none;
+  filter: grayscale(1);
+}
+body header .horizontal-list {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  font-size: 1rem;
+  gap: 1rem;
+  border-style: none;
+}
+body header nav ul li:hover {
+  filter: none;
+  box-shadow: 0px 4px 2px -2px #E6E200;
+}
+body header nav ul li span:hover {
+  color: #E6E200;
+}
+body main {
+  width: 80%;
+  margin: auto;
+}
+body main .hero {
+  padding-bottom: 2rem;
+}
+body main .hero .hero-text {
+  font-size: 1.25rem;
+  padding-top: 10rem;
+  margin-bottom: 2rem;
+}
+body main .hero button.hero-button {
+  all: unset;
+  border-radius: var(--Radius-Radius-XXL, 64px);
+  border: var(--Border-Border-Thin, 1px) solid #E5E4E0;
+  display: flex;
+  padding: var(--Spacing-Spacing-08, 8px) var(--Spacing-Spacing-16, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-1, 4px);
+  /* margin-top: 5px; */
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+body main .hero button.hero-button:hover {
+  margin-top: -5px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  color: #e5e4e0;
+  border: 1px solid #e5e4e0;
+  box-shadow: 5px 5px #e5e4e0;
+  transition: 0.3s;
+}
+body main .hero button.hero-button:active {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  box-shadow: none;
+  background-color: #E5E4E0;
+}
+body main .hero button.hero-button a {
+  text-decoration: none;
+}
+body main .hero button.hero-button a :active {
+  color: #030104;
+}
+body main .title-animation {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  max-height: auto;
+}
+body main .title-animation img {
+  display: flex;
+  justify-self: center;
+  position: relative;
+  background-image: url(../assets/img/fondoanimado.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+body main h2 {
+  color: #FFF;
+  font-family: poppins;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 0.8em;
+  letter-spacing: 2.88px;
+  margin-bottom: 4rem;
+}
+body main h2 span {
+  color: #FFF;
+  font-family: poppins;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 150;
+  line-height: 150.563%; /* 60.225px */
+  letter-spacing: 1.2px;
+  margin-left: -1rem;
+}
+body main .letsTalk {
+  color: #E5E4E0;
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 150% */
+  text-transform: uppercase;
+}
+body main .hquorumImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 36px;
+  filter: grayscale(1);
+}
+body main .hquorumImage:hover {
+  filter: none;
+  box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
+}
+body main .about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2rem;
+  color: #E5E4E0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-left: 5rem;
+  background-color: #1e1e1e;
+  border-radius: 36px;
+  box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
+  margin-bottom: 5rem;
+  padding: 32px;
+}
+body main .about .about1 {
+  grid-column: span 2/span 2;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+}
+body main .about .about2 {
+  grid-column: span 2/span 2;
+  grid-row: span 4/span 4;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+body main .about .about3 {
+  grid-row: span 5/span 5;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  justify-self: center;
+}
+body main .koralan {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 32px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  color: #E5E4E0;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  background-color: #1e1e1e;
+  border-radius: 36px;
+  box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
+  margin-bottom: 5rem;
+}
+body main ul.formularios {
+  list-style-type: none;
+}
+body main ul.formularios input.form {
+  display: flex;
+  flex-direction: column;
+  all: unset;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  border-width: 1px;
+  border-bottom: 1px #E5E4E0 solid;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 0.5rem;
+  width: 100%;
+  justify-content: center;
+}
+body main ul.formularios .form:focus {
+  border-bottom: 2px #E6E200 solid;
+  color: #E6E200;
+}
+body main ul.formularios .form:invalid {
+  color: #a81b1b;
+  border-bottom: 2px #a81b1b;
+}
+body main div.contact-button button {
+  all: unset;
+  color: #E5E4E0;
+  border-radius: var(--Radius-Radius-XXL, 64px);
+  border: var(--Border-Border-Thin, 1px) solid #E5E4E0;
+  display: flex;
+  padding: var(--Spacing-Spacing-08, 8px) var(--Spacing-Spacing-16, 16px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-1, 4px);
+  margin-top: 3rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+body main .contact-button button:hover {
+  margin-top: 3.3125rem;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  color: #e5e4e0;
+  border: 1px solid #e5e4e0;
+  box-shadow: -5px -5px #e5e4e0;
+  transition: 0.3s;
+}
+body main .contact-button buton:active {
+  margin-top: 3rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  box-shadow: none;
+  text-decoration: none;
+  background-color: #E5E4E0;
+  color: #030104;
+}
+body main .contact-button {
+  display: flex;
+  justify-content: flex-end;
+}
+body footer {
+  background-color: #1e1e1e;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+body footer p {
+  text-align: right;
+}
+body footer .links {
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.25rem;
+  border-style: none;
+  align-items: center;
+  text-decoration: none;
+  vertical-align: middle;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+body footer .links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.3125rem;
+}
+
+/*# sourceMappingURL=style.css.map */

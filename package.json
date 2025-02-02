@@ -1,0 +1,20 @@
+{
+  "name": "public_html",
+  "version": "1.0.0",
+  "description": "<h1>Hola! Soy Kato Irigoitia.</h1>\r <h2>Diseñador UX/UI, Ilustrador, Web Developer y Dungeon Master en mis tiempos libres.</h2>",
+  "homepage": "https://github.com/Katoirigoitia/katoirigoitia.com#readme",
+  "bugs": {
+    "url": "https://github.com/Katoirigoitia/katoirigoitia.com/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Katoirigoitia/katoirigoitia.com.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,15 +1,16 @@
-*{
+*{  /*ok*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: poppins;
+    color: #E5E4E0;
 }
 
-body{
+body{  /*ok*/
     background-color: #030104;
 }
 
-header { 
+header {  /*ok*/
     background-color: #1e1e1e;
     display: flex;
     justify-content: space-between;
@@ -17,25 +18,15 @@ header {
     align-items: center;
     font-size: 1rem;
 }
-header a{
+header a{  /*ok*/
     display: flex;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
 } 
 
-footer{
-    background-color: #1e1e1e;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-footer p{
-    color: #E5E4E0;
-    text-align: right;
-}
 
-
-.horizontal-list{
+.horizontal-list{  /*ok*/
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
@@ -44,33 +35,36 @@ footer p{
     border-style: none;
 }
 
-nav ul li{
+nav ul li{  /*ok*/
     list-style: none;
     filter: grayscale(1);
 }
-nav ul li:hover{
+nav ul li:hover{  /*ok*/
     filter: none;
     box-shadow: 0px 4px 2px -2px #E6E200;
 }
-nav ul li span:hover{
+nav ul li span:hover{  /*ok*/
     color: #E6E200;
 }
 
 
-
-a{
-    color: #e5e4e0;
+footer{  /*ok*/
+    background-color: #1e1e1e;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+footer p{  /*ok*/
+    text-align: right;
 }
 
-.hero-text{
-    color: #E5E4E0;
+.hero-text{  /*ok*/
     font-size: 1.25rem;
     padding-top: 10rem;
     margin-bottom: 2rem;
 
 }
 
-button.hero-button{
+button.hero-button{  /*ok*/
     all: unset;
     border-radius: var(--Radius-Radius-XXL, 64px);
     border: var(--Border-Border-Thin, 1px) solid #E5E4E0;
@@ -83,7 +77,7 @@ button.hero-button{
     margin-left: 5px;
     margin-bottom: 0px;
 }
-button.hero-button:hover{
+button.hero-button:hover{  /*ok*/
     margin-top: -5px;
     margin-left: 0px;
     margin-bottom: 5px;
@@ -92,7 +86,7 @@ button.hero-button:hover{
     box-shadow: 5px 5px #e5e4e0;
     transition: 0.3s;
 }
-button.hero-button:active{
+button.hero-button:active{  /*ok*/
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 0px;
@@ -100,26 +94,26 @@ button.hero-button:active{
     background-color: #E5E4E0;
     
 }
-button.hero-button a{
+button.hero-button a{  /*ok*/
     text-decoration: none;
 }
-button.hero-button a:active{
+button.hero-button a:active{  /*ok*/
     color: #030104;
 }
-main{
+main{  /*ok*/
     width: 80%;
     margin: auto;
 }
-.hero{
-    padding-bottom: 2rem;
+.hero{  /*ok*/
+    padding-bottom: 2rem; 
 }
-.title-animation{
+.title-animation{  /*ok*/
     display: flex;
     justify-content: center;
     max-width: 100%;
     max-height: auto;
 }
-.title-animation img{
+.title-animation img{  /*ok*/
     display: flex;
     justify-self: center;
     position: relative;
@@ -131,7 +125,7 @@ main{
     height: 100%;
 }
 
-.links{
+.links{ /*ok*/
     margin-top: 2rem;
     font-size: 1.25rem;
     list-style: none;
@@ -146,7 +140,7 @@ main{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.links a{
+.links a{ /*ok*/
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -164,7 +158,7 @@ section div ul.projects{
     margin-bottom: 5rem;
 }
 
-h2{
+h2{ /*ok*/
     color: #FFF;
     font-family: poppins;
     font-size: 6rem;
@@ -174,7 +168,7 @@ h2{
     letter-spacing: 2.88px;
     margin-bottom: 4rem;
 }
-h2 span{
+h2 span{  /*ok*/
     color: #FFF;
     font-family: poppins;
     font-size: 2.5rem;
@@ -185,7 +179,7 @@ h2 span{
     margin-left: -1rem;
 }
 
-.letsTalk{
+.letsTalk{ /*ok*/
     color: #E5E4E0;
     font-family: Poppins;
     font-size: 32px;
@@ -195,19 +189,19 @@ h2 span{
     text-transform: uppercase;
 }
 
-.hquorumImage{
+.hquorumImage{ /*ok*/
     max-width: 100%;
     height: auto;
     border-radius: 36px;
     filter: grayscale(1);
 }
-.hquorumImage:hover{
+.hquorumImage:hover{ /*ok*/
     filter: none;    
     box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
 }
 
 
-.about {
+.about { /*ok*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -226,28 +220,28 @@ h2 span{
     padding: 32px;
 }
     
-.about1 {
+.about1 { /*ok*/
     grid-column: span 2 / span 2;
     margin-top: 3rem;
     margin-left: 3rem;
     font-size: 2rem;
 }
 
-.about2 {
+.about2 { /*ok*/
     grid-column: span 2 / span 2;
     grid-row: span 4 / span 4;
     grid-column-start: 1;
     grid-row-start: 2;
 }
 
-.about3 {
+.about3 { /*ok*/
     grid-row: span 5 / span 5;
     grid-column-start: 3;
     grid-row-start: 1;
     justify-self: center;
 }
 
-.koralan{
+.koralan{ /*ok*/
     display: flex;
     flex-direction: column;
     padding: 36px 32px;

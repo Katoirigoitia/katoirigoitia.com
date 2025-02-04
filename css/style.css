@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ body header {
   justify-content: space-between;
   padding: 3rem 2rem;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 body header a {
   display: flex;
@@ -31,7 +32,7 @@ body header .horizontal-list {
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
-  font-size: 1rem;
+  font-size: 1.25rem;
   gap: 1rem;
   border-style: none;
 }
@@ -86,7 +87,7 @@ body main .hero button.hero-button:active {
 body main .hero button.hero-button a {
   text-decoration: none;
 }
-body main .hero button.hero-button a :active {
+body main .hero button.hero-button a:active {
   color: #030104;
 }
 body main .title-animation {
@@ -108,7 +109,6 @@ body main .title-animation img {
 }
 body main h2 {
   color: #FFF;
-  font-family: poppins;
   font-size: 6rem;
   font-style: normal;
   font-weight: 250;
@@ -127,9 +127,7 @@ body main h2 span {
   margin-left: -1rem;
 }
 body main .letsTalk {
-  color: #E5E4E0;
-  font-family: Poppins;
-  font-size: 32px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 48px; /* 150% */
@@ -153,7 +151,7 @@ body main .about {
   color: #E5E4E0;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: justify;
   margin-left: 5rem;
   background-color: #1e1e1e;
@@ -166,7 +164,7 @@ body main .about .about1 {
   grid-column: span 2/span 2;
   margin-top: 3rem;
   margin-left: 3rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 body main .about .about2 {
   grid-column: span 2/span 2;
@@ -190,7 +188,7 @@ body main .koralan {
   gap: 32px;
   align-self: stretch;
   color: #E5E4E0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: justify;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -207,7 +205,7 @@ body main ul.formularios input.form {
   flex-direction: column;
   all: unset;
   margin: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border-width: 1px;
   border-bottom: 1px #E5E4E0 solid;
   border-left: 0px;
@@ -216,11 +214,11 @@ body main ul.formularios input.form {
   width: 100%;
   justify-content: center;
 }
-body main ul.formularios .form:focus {
+body main ul.formularios input.form:focus {
   border-bottom: 2px #E6E200 solid;
   color: #E6E200;
 }
-body main ul.formularios .form:invalid {
+body main ul.formularios input.form:invalid {
   color: #a81b1b;
   border-bottom: 2px #a81b1b;
 }
@@ -238,7 +236,7 @@ body main div.contact-button button {
   margin-right: 5px;
   margin-bottom: 5px;
 }
-body main .contact-button button:hover {
+body main div.contact-button button:hover {
   margin-top: 3.3125rem;
   margin-left: 0px;
   margin-bottom: 0px;
@@ -247,7 +245,7 @@ body main .contact-button button:hover {
   box-shadow: -5px -5px #e5e4e0;
   transition: 0.3s;
 }
-body main .contact-button buton:active {
+body main div.contact-button button:active {
   margin-top: 3rem;
   margin-right: 5px;
   margin-bottom: 5px;
@@ -287,6 +285,115 @@ body footer .links a {
   align-items: center;
   text-decoration: none;
   gap: 0.3125rem;
+}
+
+@media (max-width: 1023px) {
+  .links {
+    display: flex;
+  }
+  .links a span {
+    display: none;
+  }
+  footer p {
+    display: none;
+  }
+  .horizontal-list span {
+    display: none;
+  }
+  .title-animation {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .about .about1 {
+    text-align: center;
+    margin: 0;
+  }
+  .about .about3 {
+    display: none;
+  }
+}
+@media (max-width: 525px) {
+  .links {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+  .links img {
+    max-width: 80%;
+  }
+  header {
+    flex-direction: column;
+  }
+  .horizontal-list {
+    padding-top: 2rem;
+  }
+  main {
+    width: 100%;
+    padding: 0rem;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .div-button {
+    display: flex;
+    justify-content: center;
+  }
+  h2 {
+    color: #FFF;
+    font-family: poppins;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 250;
+    line-height: 0.8em;
+    letter-spacing: 2.88px;
+    margin-bottom: 4rem;
+    margin-left: 2;
+  }
+  h2 span {
+    color: #FFF;
+    font-family: poppins;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 150;
+    line-height: 150.563%; /* 60.225px */
+    letter-spacing: 1.2px;
+    margin-left: 1rem;
+  }
+  .letsTalk {
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    margin: 0;
+    padding: 0;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .koralan {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+    font-size: 1rem;
+  }
+  .about1 {
+    text-align: center;
+    margin: 0;
+  }
+  .about3 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

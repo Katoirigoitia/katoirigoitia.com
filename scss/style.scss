@@ -1,20 +1,18 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: poppins;
-    color: #E5E4E0;
-}
+@import "./base/tipo";
+@import "./utility/variables";
+@import "./utility/maps";
+@import "./base/reset";
 
 body{
     background-color: #030104;
+
     header { 
     background-color: #1e1e1e;
     display: flex;
     justify-content: space-between;
     padding: 3rem 2rem;
     align-items: center;
-    font-size: 1rem;
+    font-size: map-get($font-size, md );
         a{
         display: flex;
         align-items: center;
@@ -29,7 +27,7 @@ body{
             display: flex;
             justify-content: flex-end;
             flex-direction: row-reverse;
-            font-size: 1rem;
+            font-size: map-get($font-size, md );
             gap: 1rem;
             border-style: none;
         }
@@ -40,15 +38,15 @@ body{
         nav ul li span:hover{
             color: #E6E200;
         }
-
     } //Header
+
     main{
         width: 80%;
         margin: auto;
         .hero{
         padding-bottom: 2rem;
             .hero-text{
-            font-size: 1.25rem;
+            font-size: map-get($font-size, md );
             padding-top: 10rem;
             margin-bottom: 2rem;
             }
@@ -64,52 +62,52 @@ body{
                 /* margin-top: 5px; */
                 margin-left: 5px;
                 margin-bottom: 0px;
-            }
-            button.hero-button:hover{
-                margin-top: -5px;
-                margin-left: 0px;
-                margin-bottom: 5px;
-                color: #e5e4e0;
-                border: 1px solid #e5e4e0;
-                box-shadow: 5px 5px #e5e4e0;
-                transition: 0.3s;
-            }
-            button.hero-button:active{
-                margin-top: 5px;
-                margin-left: 5px;
-                margin-bottom: 0px;
-                box-shadow: none;
-                background-color: #E5E4E0;
-                
-            }
-            button.hero-button a{
-                text-decoration: none;
-                :active{
-                    color: #030104;
+                &:hover{
+                    margin-top: -5px;
+                    margin-left: 0px;
+                    margin-bottom: 5px;
+                    color: #e5e4e0;
+                    border: 1px solid #e5e4e0;
+                    box-shadow: 5px 5px #e5e4e0;
+                    transition: 0.3s;
                 }
-            }
-        }
+                &:active{
+                    margin-top: 5px;
+                    margin-left: 5px;
+                    margin-bottom: 0px;
+                    box-shadow: none;
+                    background-color: #E5E4E0;
+                    
+                }
+                a{
+                    text-decoration: none;
+                    &:active{
+                        color: #030104;
+                    }
+                }
+            } //hero-button
+        } //hero
         .title-animation{
             display: flex;
             justify-content: center;
             max-width: 100%;
             max-height: auto;
+            img{
+                display: flex;
+                justify-self: center;
+                position: relative;
+                background-image: url(../assets/img/fondoanimado.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
         }
-        .title-animation img{
-            display: flex;
-            justify-self: center;
-            position: relative;
-            background-image: url(../assets/img/fondoanimado.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 100%;
-        }
+        
         h2{
             color: #FFF;
-            font-family: poppins;
-            font-size: 6rem;
+            font-size: map-get($font-size, xl );
             font-style: normal;
             font-weight: 250;
             line-height: 0.8em;
@@ -118,7 +116,7 @@ body{
             span{
                 color: #FFF;
                 font-family: poppins;
-                font-size: 2.5rem;
+                font-size: map-get($font-size, lg );
                 font-style: normal;
                 font-weight: 150;
                 line-height: 150.563%; /* 60.225px */
@@ -127,9 +125,7 @@ body{
             }
         }
         .letsTalk{
-            color: #E5E4E0;
-            font-family: Poppins;
-            font-size: 32px;
+            font-size: map-get($font-size, lg );
             font-style: normal;
             font-weight: 400;
             line-height: 48px; /* 150% */
@@ -145,17 +141,15 @@ body{
             filter: none;    
             box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
         }
-        
         .about {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(5, 1fr);
             gap: 2rem;
-        
             color: #E5E4E0;
             justify-content: space-between;
             align-items: center;
-            font-size: 1.5rem;
+            font-size: map-get($font-size, md );
             text-align: justify;
             margin-left: 5rem;
             background-color: #1e1e1e;
@@ -163,21 +157,18 @@ body{
             box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
             margin-bottom: 5rem;
             padding: 32px;
-            
             .about1 {
                 grid-column: span 2 / span 2;
                 margin-top: 3rem;
                 margin-left: 3rem;
-                font-size: 2rem;
+                font-size: map-get($font-size, lg );
             }
-            
             .about2 {
                 grid-column: span 2 / span 2;
                 grid-row: span 4 / span 4;
                 grid-column-start: 1;
                 grid-row-start: 2;
             }
-            
             .about3 {
                 grid-row: span 5 / span 5;
                 grid-column-start: 3;
@@ -196,7 +187,7 @@ body{
             align-self: stretch;
         
             color: #E5E4E0;
-            font-size: 1.5rem;
+            font-size: map-get($font-size, md );
             text-align: justify;
             margin-left: 5rem;
             margin-right: 5rem;
@@ -212,7 +203,7 @@ body{
                 flex-direction: column;
                 all: unset;
                 margin: 0.5rem;
-                font-size: 1.5rem;
+                font-size: map-get($font-size, md );
                 border-width: 1px;
                 border-bottom: 1px#E5E4E0 solid;
                 border-left: 0px;
@@ -220,16 +211,15 @@ body{
                 padding: 0.5rem;
                 width: 100%;
                 justify-content: center;
-            }
-            .form:focus{
-                border-bottom: 2px#E6E200 solid;
-                color: #E6E200;
-            }
-            
-            .form:invalid{
-                color: #a81b1b;
-                border-bottom: 2px#a81b1b;
-                
+                &:focus{
+                    border-bottom: 2px#E6E200 solid;
+                    color: #E6E200;
+                }
+                &:invalid{
+                    color: #a81b1b;
+                    border-bottom: 2px#a81b1b;
+                    
+                }
             }
         }
         div.contact-button button{
@@ -245,17 +235,16 @@ body{
             margin-top: 3rem;
             margin-right: 5px;
             margin-bottom: 5px;
-        }
-            .contact-button button:hover{
-            margin-top: 3.3125rem;
-            margin-left: 0px;
-            margin-bottom: 0px;
-                color: #e5e4e0;
-                border: 1px solid #e5e4e0;
-                box-shadow: -5px -5px #e5e4e0;
-                transition: 0.3s;
-            }
-            .contact-button buton:active{
+            &:hover{
+                margin-top: 3.3125rem;
+                margin-left: 0px;
+                margin-bottom: 0px;
+                    color: #e5e4e0;
+                    border: 1px solid #e5e4e0;
+                    box-shadow: -5px -5px #e5e4e0;
+                    transition: 0.3s;
+                }
+            &:active{
                 margin-top: 3rem;
                 margin-right: 5px;
                 margin-bottom: 5px;
@@ -263,13 +252,14 @@ body{
                 text-decoration: none;
                 background-color: #E5E4E0;
                 color: #030104;
-            }
+                }
+        }
         .contact-button{
             display: flex;
             justify-content: flex-end;
         }        
-    
     } //Main
+
     footer{
         background-color: #1e1e1e;
         padding-left: 5rem;
@@ -279,7 +269,7 @@ body{
         }
         .links{
             margin-top: 2rem;
-            font-size: 1.25rem;
+            font-size: map-get($font-size, md );
             list-style: none;
             display: flex;
             justify-content: space-evenly;
@@ -298,4 +288,9 @@ body{
             }
         }
     } //Footer
-} //Body
+
+}//Body
+
+//Media
+@import "./media/media1023";
+@import "./media/media525";

@@ -1,0 +1,77 @@
+@media(max-width:525px){
+    .links{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        img{
+            max-width: 80%;
+        }
+    }
+    header{
+        flex-direction: column;
+    }
+    .horizontal-list{
+        padding-top: 2rem;
+    }
+    main{
+        width: 100%;
+        padding: 0rem;
+    }
+    .hero-text{
+        text-align: center;
+    }
+    .div-button{
+        display: flex;
+        justify-content: center;
+    }
+    h2{
+        color: #FFF;
+        font-family: poppins;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 250;
+        line-height: 0.8em;
+        letter-spacing: 2.88px;
+        margin-bottom: 4rem;
+        margin-left: 2;
+        span{
+            color: #FFF;
+            font-family: poppins;
+            font-size: 2.5rem;
+            font-style: normal;
+            font-weight: 150;
+            line-height: 150.563%; /* 60.225px */
+            letter-spacing: 1.2px;
+            margin-left: 1rem;
+        }
+    }    
+    .letsTalk{
+        display: flex;
+        justify-content: center;
+    }
+    .form{
+        margin: 0;
+        padding: 0;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+    .koralan{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+    .about1{
+        text-align: center;
+        margin: 0;
+    }
+    .about3{
+        display: none;
+    }
+}

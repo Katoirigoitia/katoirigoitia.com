@@ -6,11 +6,9 @@
   font-family: poppins;
   color: #E5E4E0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background-color: #030104;
 }
@@ -426,5 +424,4 @@ body footer .links a {
     font-size: 1rem;
   }
 }
-
 /*# sourceMappingURL=style.css.map */

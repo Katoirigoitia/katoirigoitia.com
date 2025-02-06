@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kato - Portfolio</title>
     <link rel="icon" type="image/svg" href="./assets/ico/favicon.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./js/script.js"></script>
 </head>
@@ -18,10 +15,11 @@
             <section>
                 <ul class="horizontal-list">
                     <li><a href="#"><img src="./assets/nav/home.png" alt="Home"><span>Home</span></a></li>
-                    <li><a href="./pages/projects.html"><img src="./assets/nav/projects.png" alt="Projects"><span>Projecs</span></a></li>
-                    <li><a href="./pages/aboutMe.html"><img src="./assets/nav/aboutMe.png" alt="About Me"><span>About</span></a></li>
-                    <li><a href="./pages/contact.html"><img src="./assets/nav/contact.png" alt="Contact"><span>Contact</span></a></li>
+                    <li><a href="#projects" ><img src="./assets/nav/projects.png" alt="Projects"><span>Projecs</span></a></li>
+                    <li><a href="#aboutMe"><img src="./assets/nav/aboutMe.png" alt="About Me"><span>About</span></a></li>
+                    <li><a href="#contact"><img src="./assets/nav/contact.png" alt="Contact"><span>Contact</span></a></li>
                     <li><a href="./pages/koralan.html"><img src="./assets/nav/dragon.png" alt="Korlan"><span>Koralan</span></a></li>
+                    
                 </ul>
             </section>
         </nav>
@@ -37,6 +35,51 @@
         
         <section class="title-animation">
             <img src="./assets/img/Subtract.png" alt="KATO en mayusculas con un fondo animado que representa un videojuego de los 80">
+        </section>
+        <section class="hquorum" id="projects">
+            <section class="margin">
+                <h2><span>LET'S</span><br>PLAY</h2>
+            </section>
+        </section>
+        <section>
+            <a href="https://www.figma.com/design/kb6CCUQagm3rMc6CNT8pk2/HQuorum?node-id=1188-1039&t=96ZWQj3E1tdAk11j-1" target="_blank"><img class="hquorumImage" src="./assets/img/Cover.png" alt="hquorum maqueta de aplicación"></a>
+        </section>
+        <section class="margin" id="aboutMe">
+            <h2><span>About</span><br>ME</h2>
+        </section>
+    <section class="about">
+        <div class="about1">
+            <p>FACUNDO <strong>KATO</strong> IRIGOITIA</p>
+            
+        </div>
+        <div class="about2">
+            <p><strong>Diseñador gráfico</strong> de Argentina, con <em>más de 10 años de experiencia</em> en la industria de videojuegos.<br>
+            Mi perfil profesional se enfoca en <em>UX/UI Design</em> y cuento con una diplomatura de la UTN. Soy adaptable, entusiasta, creativo y un líder proactivo.<br>
+            Me apasiona resolver problemas y trabajar en equipo. Mi objetivo es aplicar mis habilidades y ampliar mi rango a distintas industrias,<br>
+            estoy interesado en seguir creciendo en este campo. Mis habilidades blandas estratégicas incluyen <em>liderazgo, comunicación efectiva y atención al detalle</em>.
+            </p>
+        </div>
+        <div class="about3">
+            <p><img src="../assets/img/fotoPerfil.png" alt="la imagen muestra una foto selfie en blanco y negro"></p>
+        </div>
+    </section>
+    <section class="margin" id="contact">
+        <h2><span>Cont-</span><br>ACT</h2>
+    </section>
+    <section class="formulario">
+        
+            <h3 class="letsTalk">LET'S TALK</h3>
+        
+            <form target="_blank" action="https://formsubmit.co/firigoitia@gmail.com" method="post">
+                <ul class="formularios">
+                    <li><input type="text" id="nombre" name="nombre" placeholder="Tu nombre" class="form" required></li>
+                    <li><input type="email" id="email" name="email" placeholder="Email" class="form" required></li>
+                    <li><input type="text" id="empresa" name="empresa" placeholder="Empresa" class="form" required></li>
+                    <li><input type="text" id="proyecto" name="proyecto" placeholder="Hablame de tu Proyecto" class="form" required></li>
+                </ul>
+                <div class="contact-button"><button type="submit">Enviar Mensaje</button></div>
+            </form>
+        
         </section>
     </main>
     <footer>

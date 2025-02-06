@@ -328,7 +328,7 @@ div.contact-button button:active{
     justify-content: flex-end;
 }
 
-@media(max-width: 1023px){
+@media(max-width: 1023px){ /*ok*/
     .links{
         display: flex;
     }

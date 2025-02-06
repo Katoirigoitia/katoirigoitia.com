@@ -2,6 +2,7 @@
 @import "./utility/variables";
 @import "./utility/maps";
 @import "./base/reset";
+@import "./base/behavior";
 
 body{
     background-color: #030104;
@@ -19,24 +20,26 @@ body{
         gap: 1rem;
         text-decoration: none;
         } 
-        nav ul li{
-            list-style: none;
-            filter: grayscale(1);
-        }
-        .horizontal-list{
-            display: flex;
-            justify-content: flex-end;
-            flex-direction: row-reverse;
-            font-size: map-get($font-size, md );
-            gap: 1rem;
-            border-style: none;
-        }
-        nav ul li:hover{
-            filter: none;
-            box-shadow: 0px 4px 2px -2px #E6E200;
-        }
-        nav ul li span:hover{
-            color: #E6E200;
+        nav{
+            ul li{
+                list-style: none;
+                filter: grayscale(1);
+            }
+            .horizontal-list{
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                font-size: map-get($font-size, md );
+                gap: 1rem;
+                border-style: none;
+            }
+            nav ul li:hover{
+                filter: none;
+                box-shadow: 0px 4px 2px -2px #E6E200;
+            }
+            nav ul li span:hover{
+                color: #E6E200;
+            }
         }
     } //Header
 
@@ -87,6 +90,9 @@ body{
                 }
             } //hero-button
         } //hero
+        .margin{
+            margin-top: 2rem;
+        }
         .title-animation{
             display: flex;
             justify-content: center;
@@ -151,7 +157,6 @@ body{
             align-items: center;
             font-size: map-get($font-size, md );
             text-align: justify;
-            margin-left: 5rem;
             background-color: #1e1e1e;
             border-radius: 36px;
             box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
@@ -215,11 +220,11 @@ body{
                     border-bottom: 2px#E6E200 solid;
                     color: #E6E200;
                 }
-                &:invalid{
-                    color: #a81b1b;
-                    border-bottom: 2px#a81b1b;
+                // &:invalid{
+                //     color: #a81b1b;
+                //     border-bottom: 2px#a81b1b;
                     
-                }
+                // }
             }
         }
         div.contact-button button{

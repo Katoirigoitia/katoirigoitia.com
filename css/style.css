@@ -289,7 +289,7 @@ body footer .links a {
   gap: 0.3125rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
   .links {
     display: flex;
   }
@@ -306,21 +306,24 @@ body footer .links a {
     margin-bottom: 5rem;
     margin-top: 5rem;
   }
-  .about {
+  body main .about {
     display: flex;
     flex-direction: column;
     margin: 0;
     font-size: 1rem;
   }
-  .about .about1 {
+  body main .about .about1 {
+    margin-left: 0;
     text-align: center;
-    margin: 0;
   }
-  .about .about3 {
+  body main .about .about3 {
     display: none;
   }
+  body main .formulario h3.letsTalk {
+    justify-self: center;
+  }
 }
-@media (max-width: 525px) {
+@media (max-width: 425px) {
   .links {
     flex-direction: row;
     justify-content: space-evenly;
@@ -329,24 +332,29 @@ body footer .links a {
   .links img {
     max-width: 80%;
   }
-  header {
-    flex-direction: column;
+  body header {
+    padding: 2rem 1.5rem;
+    font-size: 1rem;
+    justify-content: space-evenly;
   }
-  .horizontal-list {
-    padding-top: 2rem;
+  body header .navbar {
+    display: none;
   }
-  main {
+  body main {
     width: 100%;
     padding: 0rem;
   }
-  .hero-text {
+  body main .title-animation {
+    display: none;
+  }
+  body main .hero-text {
     text-align: center;
   }
-  .div-button {
+  body main .div-button {
     display: flex;
     justify-content: center;
   }
-  h2 {
+  body main h2 {
     color: #FFF;
     font-family: poppins;
     font-size: 4rem;
@@ -357,7 +365,7 @@ body footer .links a {
     margin-bottom: 4rem;
     margin-left: 2;
   }
-  h2 span {
+  body main h2 span {
     color: #FFF;
     font-family: poppins;
     font-size: 2.5rem;
@@ -367,34 +375,55 @@ body footer .links a {
     letter-spacing: 1.2px;
     margin-left: 1rem;
   }
-  .letsTalk {
-    display: flex;
-    justify-content: center;
-  }
-  .form {
+  body main .hquorumImage {
+    border-radius: 0;
     margin: 0;
     padding: 0;
   }
-  .about {
+  body main .letsTalk {
+    display: flex;
+    justify-content: center;
+  }
+  body main .margin {
+    margin-left: 1rem;
+  }
+  body main .formulario {
+    justify-content: center;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  body main .form {
+    margin: 0;
+    padding: 0;
+  }
+  body main .about {
     display: flex;
     flex-direction: column;
     border-radius: 0;
     margin: 0;
     font-size: 1rem;
   }
-  .koralan {
-    display: flex;
-    flex-direction: column;
-    border-radius: 0;
+  body main .about .about1 {
+    text-align: center;
     margin: 0;
-    font-size: 1rem;
+    padding-left: 0;
+    padding-right: 0;
   }
-  .about1 {
+  body main .about .about2 {
     text-align: center;
     margin: 0;
   }
-  .about3 {
+  body main .about .about3 {
     display: none;
+  }
+  body main .koralan {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+    font-size: 1rem;
   }
 }
 

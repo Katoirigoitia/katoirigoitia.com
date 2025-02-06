@@ -1,0 +1,105 @@
+@media(max-width:425px){
+    .links{
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        img{
+            max-width: 80%;
+        }
+    }
+body{
+    header{
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+        justify-content: space-evenly;
+        .navbar{
+            display: none;
+        }
+    }
+    main{
+        width: 100%;
+        padding: 0rem;
+        .title-animation{
+            display: none;
+        }
+        .hero-text{
+            text-align: center;
+        }
+        .div-button{
+            display: flex;
+            justify-content: center;
+        }
+        h2{
+            color: #FFF;
+            font-family: poppins;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 250;
+            line-height: 0.8em;
+            letter-spacing: 2.88px;
+            margin-bottom: 4rem;
+            margin-left: 2;
+            span{
+                color: #FFF;
+                font-family: poppins;
+                font-size: 2.5rem;
+                font-style: normal;
+                font-weight: 150;
+                line-height: 150.563%; /* 60.225px */
+                letter-spacing: 1.2px;
+                margin-left: 1rem;
+            }
+        }
+        .hquorumImage{
+            border-radius: 0;
+            margin: 0;
+            padding: 0;
+        }
+        .letsTalk{
+            display: flex;
+            justify-content: center;
+        }
+        .margin{
+            margin-left: 1rem;
+        }
+        .formulario{
+            justify-content: center;
+            width: 90%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .form{
+            margin: 0;
+            padding: 0;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            border-radius: 0;
+            margin: 0;
+            font-size: 1rem;
+            .about1{
+                text-align: center;
+                margin: 0;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .about2{
+                text-align: center;
+                margin: 0;
+            }
+            .about3{
+                display: none;
+            }
+        }
+        .koralan{
+            display: flex;
+            flex-direction: column;
+            border-radius: 0;
+            margin: 0;
+            font-size: 1rem;
+        }
+        }//main
+    } //body
+}//media

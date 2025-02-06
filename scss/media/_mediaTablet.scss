@@ -1,0 +1,40 @@
+@media(max-width: 768px){
+    .links{
+        display: flex;
+        a span{
+            display: none;
+        }
+    } 
+    footer p{
+        display: none;
+    } 
+    .horizontal-list span{
+        display: none;
+    } 
+    .title-animation{
+        margin-bottom: 5rem; 
+        margin-top: 5rem;
+    }
+    body{
+        main{
+            .about{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                font-size: 1rem;
+                .about1{
+                    margin-left: 0;
+                    text-align: center;
+                }
+                .about3{
+                    display: none;
+                }
+            }
+            .formulario{
+                h3.letsTalk{
+                    justify-self: center;
+                }
+            }
+        } //main
+    } // body
+} // cerramos media

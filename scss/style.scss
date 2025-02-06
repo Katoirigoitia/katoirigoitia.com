@@ -6,7 +6,6 @@
 
 body{
     background-color: #030104;
-
     header { 
     background-color: #1e1e1e;
     display: flex;
@@ -42,7 +41,6 @@ body{
             }
         }
     } //Header
-
     main{
         width: 80%;
         margin: auto;
@@ -142,11 +140,12 @@ body{
             height: auto;
             border-radius: 36px;
             filter: grayscale(1);
+            &:hover{
+                filter: none;    
+                box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
+            }
         }
-        .hquorumImage:hover{
-            filter: none;    
-            box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
-        }
+        
         .about {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -297,5 +296,5 @@ body{
 }//Body
 
 //Media
-@import "./media/media1023";
-@import "./media/media525";
+@import "./media/mediaTablet";
+@import "./media/mediaMobile";

@@ -7,8 +7,11 @@ Para este proyecto utilicé<br>
 <h3>HTML5</h3>
 <h3>CSS3</h3>
 <h3>node.JS</h3>
-<h3>SASS</h3><br>
-
-Se hacen grandes cambios. principalmente se borra la navbar en dispositivos mobile, y aunque las distintas paginas siguen existiendo, ahora los botones de la navbar hacen scroll en el mismo html con un smooth en el mismo html. <br>
-Se agrega el mail para ser enviado automaticamente (En testeo.)
+<h3>SASS</h3>
+<br>
+Dentro de los cambios principales de esta snapshot se encuentran:<br>
+-Merge de rama SASS a Main.<br>
+-Limpieza de código.<br>
+-Se agregan metadatos en head.<br>
+-Se termina de quitar el antiguo archivo CSS.<br>
 

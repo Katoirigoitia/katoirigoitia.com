@@ -14,6 +14,7 @@ html {
 body {
   background-color: #030104;
 }
+
 body header {
   background-color: #1e1e1e;
   display: flex;
@@ -47,6 +48,7 @@ body header nav nav ul li:hover {
 body header nav nav ul li span:hover {
   color: #E6E200;
 }
+
 body main {
   width: 80%;
   margin: auto;
@@ -193,6 +195,7 @@ body main .koralan {
   align-items: flex-start;
   gap: 32px;
   align-self: stretch;
+  color: #E5E4E0;
   font-size: 1.25rem;
   text-align: justify;
   margin-left: 5rem;
@@ -205,6 +208,7 @@ body main .koralan {
 body main .formularios {
   list-style-type: none;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 body main .formularios input.form {
   display: flex;
@@ -226,7 +230,6 @@ body main .formularios input.form:focus {
 }
 body main div.contact-button button {
   all: unset;
-  color: #E5E4E0;
   border-radius: var(--Radius-Radius-XXL, 64px);
   border: var(--Border-Border-Thin, 1px) solid #E5E4E0;
   display: flex;
@@ -234,32 +237,34 @@ body main div.contact-button button {
   justify-content: center;
   align-items: center;
   gap: var(--spacing-1, 4px);
-  margin-top: 3rem;
-  margin-right: 5px;
-  margin-bottom: 5px;
+  /* margin-top: 5px; */
+  margin-left: 5px;
+  margin-bottom: 0px;
 }
 body main div.contact-button button:hover {
-  margin-top: 3.3125rem;
+  margin-top: -5px;
+  margin-right: 5px;
   margin-left: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   color: #e5e4e0;
   border: 1px solid #e5e4e0;
-  box-shadow: -5px -5px #e5e4e0;
+  box-shadow: 5px 5px #e5e4e0;
   transition: 0.3s;
 }
 body main div.contact-button button:active {
-  margin-top: 3rem;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  box-shadow: none;
-  text-decoration: none;
-  background-color: #E5E4E0;
   color: #030104;
+  margin-top: 0px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  box-shadow: none;
+  background-color: #E5E4E0;
 }
 body main .contact-button {
   display: flex;
   justify-content: flex-end;
 }
+
 body footer {
   background-color: #1e1e1e;
   padding-left: 5rem;

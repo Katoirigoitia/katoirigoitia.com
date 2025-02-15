@@ -1,0 +1,37 @@
+body{
+    header { 
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    align-items: center;
+    font-size: map-get($font-size, md );
+        a{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        text-decoration: none;
+        } 
+        nav{
+            ul li{
+                list-style: none;
+                filter: grayscale(1);
+            }
+            .horizontal-list{
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                font-size: map-get($font-size, md );
+                gap: 1rem;
+                border-style: none;
+            }
+            nav ul li:hover{
+                filter: none;
+                box-shadow: 0px 4px 2px -2px #E6E200;
+            }
+            nav ul li span:hover{
+                color: #E6E200;
+            }
+        }
+    } //Header
+}

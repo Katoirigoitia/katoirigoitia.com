@@ -1,0 +1,30 @@
+body{
+    footer{
+        background-color: #1e1e1e;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        p{
+            text-align: right;
+        }
+        .links{
+            margin-top: 2rem;
+            font-size: map-get($font-size, md );
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 1.25rem;
+            border-style: none;
+            align-items: center;
+            text-decoration: none;
+            vertical-align: middle;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                gap: .3125rem;
+            }
+        }
+    } //Footer
+}

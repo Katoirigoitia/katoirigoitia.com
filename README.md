@@ -14,4 +14,4 @@ Dentro de los cambios principales de esta snapshot se encuentran:<br>
 -Limpieza de código.<br>
 -Se agregan metadatos en head.<br>
 -Se termina de quitar el antiguo archivo CSS.<br>
-
+-Nav Sticky. (Se agregan classes con padding para las distintas setcion de la nav).

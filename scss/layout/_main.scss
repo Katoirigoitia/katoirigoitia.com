@@ -46,6 +46,9 @@ body{
                 }
             } //hero-button
         } //hero
+        .hquorum{
+            padding-top: 7rem;
+        }
         .margin{
             margin-top: 2rem;
         }
@@ -102,6 +105,9 @@ body{
                 box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
             }
         }
+        .aboutMe-top{
+            padding-top: 7rem;
+        }
         .about {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -119,8 +125,8 @@ body{
             padding: 32px;
             .about1 {
                 grid-column: span 2 / span 2;
-                margin-top: 3rem;
-                margin-left: 3rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
                 font-size: map-get($font-size, lg );
             }
             .about2 {
@@ -135,6 +141,9 @@ body{
                 grid-row-start: 1;
                 justify-self: center;
             }
+        }
+        .contact-top{
+            padding-top: 7rem;
         }
         .koralan{
             display: flex;

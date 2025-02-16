@@ -15,6 +15,9 @@ body {
   background-color: #030104;
 }
 
+body {
+  position: relative;
+}
 body header {
   background-color: #1e1e1e;
   display: flex;
@@ -22,6 +25,9 @@ body header {
   padding: 3rem 2rem;
   align-items: center;
   font-size: 1.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
 }
 body header a {
   display: flex;
@@ -96,6 +102,9 @@ body main .hero button.hero-button a {
 body main .hero button.hero-button a:active {
   color: #030104;
 }
+body main .hquorum {
+  padding-top: 7rem;
+}
 body main .margin {
   margin-top: 2rem;
 }
@@ -152,6 +161,9 @@ body main .hquorumImage:hover {
   filter: none;
   box-shadow: 0px 12px 16px 0px rgba(103, 0, 229, 0.36);
 }
+body main .aboutMe-top {
+  padding-top: 7rem;
+}
 body main .about {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -170,8 +182,8 @@ body main .about {
 }
 body main .about .about1 {
   grid-column: span 2/span 2;
-  margin-top: 3rem;
-  margin-left: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
   font-size: 2.5rem;
 }
 body main .about .about2 {
@@ -185,6 +197,9 @@ body main .about .about3 {
   grid-column-start: 3;
   grid-row-start: 1;
   justify-self: center;
+}
+body main .contact-top {
+  padding-top: 7rem;
 }
 body main .koralan {
   display: flex;

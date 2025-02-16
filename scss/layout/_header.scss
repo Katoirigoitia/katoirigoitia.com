@@ -1,11 +1,15 @@
 body{
+    position: relative;
     header { 
-    background-color: #1e1e1e;
+    background-color: map-get($colors, backgroundGrey);
     display: flex;
     justify-content: space-between;
     padding: 3rem 2rem;
     align-items: center;
     font-size: map-get($font-size, md );
+    position: sticky;
+    top: 0;
+    z-index: 99999;
         a{
         display: flex;
         align-items: center;
